@@ -26,8 +26,8 @@ git clone https://github.com/yojiro0525/vimfile.git .
 #-----------------------------------
 #pythonのインストール
 cd
-sudo apt install -y python3-pip
-sudo pip3 install -y numpy
-sudo pip3 install -y matplotlib
-sudo pip3 install -y scipy
+sudo apt install python3-pip
+sudo pip3 install numpy
+sudo pip3 install matplotlib
+sudo pip3 install scipy
 #-----------------------------------
