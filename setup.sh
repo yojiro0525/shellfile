@@ -22,7 +22,7 @@ sudo apt install -y vim
 #-----------------------------------
 #vimの設定
 cd 
-git clone git@github.com:yojiro0525/vimfile.git .
+git clone https://github.com/yojiro0525/vimfile.git .
 #-----------------------------------
 #pythonのインストール
 cd
