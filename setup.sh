@@ -35,6 +35,14 @@ sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update -y
 sudo apt install -y vim
 #-----------------------------------
+#vimのセットアップ
+cd
+git clone https://github.com/yojiro0525/vimfile.git
+cd ~/vimfile
+mv .vimrc ~/
+mv .vim ~/
+rm -rf ~/vimfile
+#-----------------------------------
 #pythonのインストール
 cd
 sudo apt install -y python3-pip
