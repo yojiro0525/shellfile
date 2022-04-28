@@ -6,10 +6,13 @@ sudo apt upadete -y
 sudo apt upgrade -y
 sudo apt -y autoremove
 #-----------------------------------
+#treeのインストール
+sudo apt install -y tree
+#-----------------------------------
 #unzipのダウンロード
 sudo apt install -y unzip
 #-----------------------------------
-#GUI環境
+#GUI環境のセットアップ
 sudo apt install -y libgl1-mesa-dev xorg-dev xbitmaps x11-apps
 echo 'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '\''{print $2}'\''):0.0 #https://astherier.com/blog/2020/08/run-gui-apps-on-wsl2/' >> ~/.profile
 cat << 'EOS' | sudo tee /etc/fonts/local.conf

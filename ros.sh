@@ -3,17 +3,6 @@
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt -y autoremove
-#GUI環境の設定
-sudo apt install -y libgl1-mesa-dev xorg-dev xbitmaps x11-apps
-echo 'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '\''{print $2}'\''):0.0 #https://astherier.com/blog/2020/08/run-gui-apps-on-wsl2/' >> ~/.profile
-cat << 'EOS' | sudo tee /etc/fonts/local.conf
-<?xml version="1.0"?>
-<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
-<fontconfig>
-    <dir>/mnt/c/Windows/Fonts</dir>
-</fontconfig> 
-<!-- Created by https://astherier.com/blog/2020/08/run-gui-apps-on-wsl2/ -->
-EOS
 #aptへのROSのダウンロード先の登録
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 #ダウンロードのための公開鍵の取得
